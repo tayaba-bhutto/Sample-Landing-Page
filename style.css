@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.navbar a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 60px 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  opacity: 0.95;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  background: #021024;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ================= PAGE BACKGROUNDS ================= */
+body.home {
+  background: linear-gradient(135deg, #021024, #0b6fa4);
+}
+
+body.about {
+  background: linear-gradient(135deg, #1b4332, #40916c);
+}
+
+body.services {
+  background: linear-gradient(135deg, #022341, #588391);
+}
+
+body.contact {
+  background: linear-gradient(135deg, #525304, #8ba16e);
+}
+
+body.thankyou {
+  background: linear-gradient(135deg, #532b0a, #887254);
+}
+
+/* ================= PAGE ACCENTS ================= */
+.about .container {
+  border-left: 6px solid #52b788;
+}
+
+.services .container {
+  border-left: 6px solid #56809c;
+}
+
+.contact .container {
+  border-left: 6px solid #8da377;
+}
+
+.thankyou .container {
+  border-left: 6px solid #8a7b5b;
+}
+
+/* ================= BUTTON COLORS ================= */
+.about .btn {
+  background: linear-gradient(135deg, #2d6a4f, #52b788);
+}
+
+.services .btn {
+  background: linear-gradient(135deg, #7b2cbf, #c77dff);
+}
+
+.contact .btn {
+  background: linear-gradient(135deg, #14500e, #496b57);
+}
+
+.thankyou .btn {
+  background: linear-gradient(135deg, #443f04, #83672c);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
